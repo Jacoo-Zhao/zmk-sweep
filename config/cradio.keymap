@@ -90,124 +90,96 @@
     combos {
         compatible = "zmk,combos";
 
-        // ESC
-
         combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
             bindings = <&kp ESC>;
+            key-positions = <0 1>;
+            timeout-ms = <50>;
             layers = <0>;
         };
-
-        // [
 
         combo_lbkt {
-            timeout-ms = <50>;
+            bindings = <&kp LBKT>; // [
             key-positions = <23 24>;
-            bindings = <&kp LBKT>;
+            timeout-ms = <50>;
             layers = <0>;
         };
-
-        // ]
 
         combo_rbkt {
-            timeout-ms = <50>;
+            bindings = <&kp RBKT>; // ]
             key-positions = <25 26>;
-            bindings = <&kp RBKT>;
+            timeout-ms = <50>;
             layers = <0>;
         };
-
-        // {
 
         combo_lbrc {
-            timeout-ms = <50>;
+            bindings = <&kp LBRC>; // {
             key-positions = <13 14>;
-            bindings = <&kp LBRC>;
+            timeout-ms = <50>;
             layers = <0>;
         };
-
-        // }
 
         combo_rbrc {
-            timeout-ms = <50>;
+            bindings = <&kp RBRC>; // }
             key-positions = <15 16>;
-            bindings = <&kp RBRC>;
+            timeout-ms = <50>;
             layers = <0>;
         };
-
-        // (
 
         combo_lpar {
-            timeout-ms = <50>;
+            bindings = <&kp LPAR>; // (
             key-positions = <3 4>;
-            bindings = <&kp LPAR>;
+            timeout-ms = <50>;
             layers = <0>;
         };
-
-        // )
 
         combo_rpar {
-            timeout-ms = <50>;
+            bindings = <&kp RPAR>; // )
             key-positions = <5 6>;
-            bindings = <&kp RPAR>;
+            timeout-ms = <50>;
             layers = <0>;
         };
 
-        // `
-
         combo_grave {
-            bindings = <&kp GRAVE>;
+            bindings = <&kp GRAVE>; // `
             key-positions = <20 21>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
-        // -
-
         combo_minus {
-            bindings = <&kp MINUS>;
+            bindings = <&kp MINUS>; // -
             key-positions = <21 22>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
-        // _
-
         combo_under {
-            bindings = <&kp UNDER>;
+            bindings = <&kp UNDER>; // _
             key-positions = <22 23>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
-        // =
-
         combo_equal {
-            bindings = <&kp EQUAL>;
+            bindings = <&kp EQUAL>; // =
             key-positions = <26 27>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
-        // +
-
         combo_plus {
-            bindings = <&kp PLUS>;
+            bindings = <&kp PLUS>; // +
             key-positions = <27 28>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
-        // ~
-
         combo_tilde {
-            bindings = <&kp TILDE>;
+            bindings = <&kp TILDE>; // ~
             key-positions = <28 29>;
             timeout-ms = <50>;
             layers = <0>;
         };
-
-        // C-SPC
 
         combo_c_spc {
             bindings = <&kp LC(SPACE)>;
@@ -216,37 +188,29 @@
             layers = <0>;
         };
 
-        // C-S-TAB
-
-        combo_tab_prev {
+        combo_c_s_tab {
             bindings = <&kp LC(LS(TAB))>;
             key-positions = <11 12>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
-        // C-TAB
-
-        combo_tab_next {
+        combo_c_tab {
             bindings = <&kp LC(TAB)>;
             key-positions = <12 13>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
-        // C-LEFT
-
-        combo_c_left {
-            bindings = <&kp LC(LEFT)>;
+        combo_a_b {
+            bindings = <&kp LA(B)>;
             key-positions = <16 17>;
             timeout-ms = <50>;
             layers = <0>;
         };
 
-        // C-RIGHT
-
-        combo_c_right {
-            bindings = <&kp LC(RIGHT)>;
+        combo_a_n {
+            bindings = <&kp LA(N)>;
             key-positions = <17 18>;
             timeout-ms = <50>;
             layers = <0>;
