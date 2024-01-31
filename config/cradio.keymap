@@ -66,6 +66,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_1";
             #binding-cells = <0>;
+            tapping-term-ms = <150>;
             bindings = <&mlt 2 TAB>, <&kp LA(N1)>, <&kp LA(LS(N1))>;
         };
 
@@ -73,6 +74,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_2";
             #binding-cells = <0>;
+            tapping-term-ms = <150>;
             bindings = <&kp SPACE>, <&kp LA(N2)>, <&kp LA(LS(N2))>;
         };
 
@@ -80,6 +82,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_3";
             #binding-cells = <0>;
+            tapping-term-ms = <150>;
             bindings = <&kp RET>, <&kp LA(N3)>, <&kp LA(LS(N3))>;
         };
 
@@ -87,6 +90,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_4";
             #binding-cells = <0>;
+            tapping-term-ms = <150>;
             bindings = <&mlt 1 BSPC>, <&kp LA(N4)>, <&kp LA(LS(N4))>;
         };
     };
