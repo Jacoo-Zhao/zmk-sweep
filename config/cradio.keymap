@@ -21,44 +21,27 @@
 
 / {
     behaviors {
-        ht: hold_tap {
-            label = "hold_tap";
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
-            global-quick-tap;
-            bindings = <&kp>, <&kp>;
-        };
-
-        // timerless homerow mods
-
         thm: timerless_homerow_mods {
             label = "timeless_homerow_mods";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>; // repeat on tap-into-hold
+            tapping-term-ms = <250>;
+            quick-tap-ms = <250>; // repeat on tap-into-hold
             require-prior-idle-ms = <120>;
             bindings = <&kp>, <&kp>;
-
             hold-trigger-on-release; // delay positional check until key-release
         };
 
-        // layer-tap for thumb keys
-
-        mlt: my_layer_tap {
+        mlt: my_layer_tap { // layer-tap for thumb keys
             label = "my_layer_tap";
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <200>;
-            quick-tap-ms = <200>; // repeat on tap-into-hold
+            tapping-term-ms = <250>;
+            quick-tap-ms = <250>; // repeat on tap-into-hold
             require-prior-idle-ms = <120>;
             bindings = <&mo>, <&kp>;
-
             hold-trigger-on-release; // delay positional check until key-release
         };
 
@@ -66,7 +49,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_1";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&mlt 2 TAB>, <&kp LA(N1)>, <&kp LA(LS(N1))>;
         };
 
@@ -74,7 +57,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_2";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&kp SPACE>, <&kp LA(N2)>, <&kp LA(LS(N2))>;
         };
 
@@ -82,7 +65,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_3";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&kp RET>, <&kp LA(N3)>, <&kp LA(LS(N3))>;
         };
 
@@ -90,7 +73,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_4";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&mlt 1 BSPC>, <&kp LA(N4)>, <&kp LA(LS(N4))>;
         };
     };
