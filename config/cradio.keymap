@@ -26,8 +26,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <250>;
-            quick-tap-ms = <250>; // repeat on tap-into-hold
+            tapping-term-ms = <280>;
+            quick-tap-ms = <280>; // repeat on tap-into-hold
             require-prior-idle-ms = <120>;
             bindings = <&kp>, <&kp>;
             hold-trigger-on-release; // delay positional check until key-release
@@ -38,8 +38,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "balanced";
-            tapping-term-ms = <250>;
-            quick-tap-ms = <250>; // repeat on tap-into-hold
+            tapping-term-ms = <280>;
+            quick-tap-ms = <280>; // repeat on tap-into-hold
             require-prior-idle-ms = <120>;
             bindings = <&mo>, <&kp>;
             hold-trigger-on-release; // delay positional check until key-release
