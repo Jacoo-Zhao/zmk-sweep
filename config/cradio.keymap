@@ -50,8 +50,8 @@
         compatible = "zmk,conditional-layers";
 
         tri_layer {
-            if-layers = <3 1>;
-            then-layer = <4>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 
@@ -156,20 +156,6 @@
             layers = <0>;
         };
 
-        combo_ws_prev {
-            bindings = <&kp LG(B)>;
-            key-positions = <16 17>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
-        combo_ws_next {
-            bindings = <&kp LG(N)>;
-            key-positions = <17 18>;
-            timeout-ms = <50>;
-            layers = <0>;
-        };
-
         combo_todo {
             bindings = <&todo>; // - [ ]
             key-positions = <14 15>;
@@ -226,12 +212,6 @@
             layers = <0>;
         };
 
-        combo_addr {
-            bindings = <&addr>;
-            key-positions = <3 10 12>; // rad
-            timeout-ms = <50>;
-            layers = <0>;
-        };
     };
 
     macros {
@@ -306,15 +286,6 @@
             tap-ms = <10>;
             bindings = <&kp N1 &kp N5 &kp SPACE &kp LS(B) &kp R &kp O &kp A &kp D &kp W &kp A &kp Y &kp SPACE &kp LS(U) &kp L &kp T &kp I &kp M &kp O &kp COMMA &kp SPACE &kp LS(N) &kp LS(S) &kp LS(W) &kp SPACE &kp N2 &kp N0 &kp N0 &kp N7>;
         };
-
-        addr: addr {
-            compatible = "zmk,behavior-macro";
-            label = "ADDRESS";
-            #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings = <&kp N1 &kp FSLH &kp N3 &kp N1 &kp SPACE &kp LS(G) &kp O &kp R &kp D &kp O &kp N &kp SPACE &kp LS(S) &kp T &kp COMMA &kp SPACE &kp LS(B) &kp U &kp R &kp W &kp O &kp O &kp D &kp SPACE &kp LS(N) &kp LS(S) &kp LS(W) &kp SPACE &kp N2 &kp N1 &kp N3 &kp N4>;
-        };
     };
 
     keymap {
@@ -334,7 +305,7 @@
 &kp F1        &kp F2        &kp F3      &kp F4                &kp F5                  &kp F6    &kp F7    &kp F8     &kp F9     &kp F10
 &kp C_VOL_UP  &kp C_VOL_DN  &kp K_MUTE  &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC    &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &kp F11
 &kp C_PREV    &kp C_NEXT    &kp C_PLAY  &bt BT_PRV            &bt BT_NXT              &kp HOME  &kp END   &kp PG_UP  &kp PG_DN  &kp F12
-                                        &trans                &trans                  &trans    &mo 4
+                                        &trans                &trans                  &trans    &trans
             >;
         };
 
