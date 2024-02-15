@@ -30,6 +30,7 @@
             quick-tap-ms = <200>; // repeat on tap-into-hold
             require-prior-idle-ms = <120>;
             bindings = <&kp>, <&kp>;
+
             hold-trigger-on-release; // delay positional check until key-release
         };
 
@@ -42,6 +43,7 @@
             quick-tap-ms = <200>; // repeat on tap-into-hold
             require-prior-idle-ms = <120>;
             bindings = <&mo>, <&kp>;
+
             hold-trigger-on-release; // delay positional check until key-release
         };
     };
@@ -211,7 +213,6 @@
             timeout-ms = <50>;
             layers = <0>;
         };
-
     };
 
     macros {
@@ -230,7 +231,7 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&kp Y &kp S &kp H &kp E &kp N &kp F &kp A &kp B &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            bindings = <&kp Z &kp H &kp A &kp O &kp Z &kp Y &kp Z &kp Y &kp Q &kp AT_SIGN &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp M &kp M>;
         };
 
         name: name {
@@ -239,7 +240,7 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            bindings = <&kp LS(Y) &kp A &kp N &kp G &kp SPACE &kp LS(S) &kp H &kp E &kp N>;
+            bindings = <&kp LS(Z) &kp I &kp Y &kp I &kp SPACE &kp LS(Z) &kp H &kp A &kp O>;
         };
 
         uts: uts {
@@ -275,7 +276,8 @@
             #binding-cells = <0>;
             wait-ms = <0>;
             tap-ms = <0>;
-            # bindings = <&kp N0 &kp N4 &kp N7 &kp N8 &kp N2 &kp N4 &kp N8 &kp N5 &kp N4 &kp N9>;
+            #
+            bindings = <&kp N0 &kp N4 &kp N7 &kp N8 &kp N2 &kp N4 &kp N8 &kp N5 &kp N4 &kp N9>;
             bindings = <&kp N0 &kp N4 &kp N3 &kp N5 &kp N9 &kp N9 &kp N7 &kp N2 &kp N8 &kp N5>;
         };
 
